@@ -1,0 +1,7 @@
+#calculator{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(195, 213, 255), rgb(156, 156, 255));
+}

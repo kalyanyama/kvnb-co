@@ -1,0 +1,12 @@
+#write-to-us{
+    background-image: url("/imgs/contact.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contact{
+    background-color: #0a0a0ac0;
+    color: white;
+    border-radius: 5px;
+    padding: 30px;
+}

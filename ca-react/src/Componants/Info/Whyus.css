@@ -1,0 +1,44 @@
+#whyus{
+    /* background-image: url("/imgs/whyus.jpg"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(90deg, rgb(195, 213, 255), rgb(156, 156, 255));
+
+}
+#clients{
+    background-image: url("/imgs/clients.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.list-client{
+    background: transparent;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border: 2px solid black;
+    border-radius: 5px;
+    color: rgb(100, 101, 100);
+    font-size: 20px;
+    text-align: center;
+}
+.client-main{
+    background: #00000086;
+    color: white;
+}
+
+.item-whyus{
+    /* box-shadow: 2px 5px 8px 0 rgb(212, 200, 200); */
+    /* border: 2px solid white; */
+    background: transparent;
+    /* -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); */
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+  }

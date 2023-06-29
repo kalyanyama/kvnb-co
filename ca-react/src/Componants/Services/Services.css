@@ -1,0 +1,13 @@
+#services-full{
+    background-image: url("/imgs/services.jpg");
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+}
+.service-list{
+    scroll-snap-align: center;
+    margin-bottom: 10%;
+    background: #1c1b1b5e;
+    padding: 15px;
+    border-radius: 5px;
+}
