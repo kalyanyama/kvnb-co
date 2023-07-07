@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import "../Navbar/Header.css"
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom"
+import { Auth } from "../Admin/Authentications"
 
 export default function Header() {
   const [active, setActive] = useState(false)
@@ -9,6 +10,7 @@ export default function Header() {
 
   const {pathname} = useLocation()
   const navigator = useNavigate()
+  const auth = Auth()
   
   const handleScroolNav =()=>{
      window.scrollY > 0 ? (setActive(true), setBgChangeHeader("next-header"), setBgChangeNav("bg-header")) :
@@ -37,31 +39,74 @@ export default function Header() {
         <li className="nav-item ">
           <NavLink className="nav-link" to="/" >Home</NavLink>
         </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" to="/services" >Services</NavLink>
+        {
+          auth.admin &&
+        <li className="nav-item ">
+          <NavLink className="nav-link" to="/dashboard" >Dashboard</NavLink>
         </li>
+        }
+        <li className="nav-item dropdown hover">
+        <a className="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          About us
+        </a>
+        <ul className="dropdown-menu">
+          <li><Link className="dropdown-item" to="/welcome">Company</Link></li>
+          <li><Link className="dropdown-item" to="/team">Our team</Link></li>
+        </ul>
+      </li>
+        <li className="nav-item dropdown hover">
+        <a className="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Services
+        </a>
+        <ul className="dropdown-menu">
+          <li><Link className="dropdown-item" to="/audit-assurance">Audit & Assurance</Link></li>
+          <li><Link className="dropdown-item" to="/direct-indirect">Direct & Indirect taxes</Link></li>
+          <li><Link className="dropdown-item" to="/nri">NRI compliances</Link></li>
+          <li><Link className="dropdown-item" to="/business-startup">Business Establishment</Link></li>
+          <li><Link className="dropdown-item" to="/book-keeping">Book keeping</Link></li>
+          <li><hr className="dropdown-divider"/></li>
+          <li><Link className="dropdown-item" to="/services">All Services</Link></li>
+        </ul>
+      </li>
+      
         {/* <li className="nav-item">
         <NavLink className="nav-link" to="/whyus">Why us</NavLink>
 
         </li> */}
         {/* <li className="nav-item">
-          <NavLink className="nav-link" to="/team" >Team</NavLink>
-        </li> */}
-        {/* <li className="nav-item">
           <NavLink className="nav-link" to="/clients" >Clients</NavLink>
         </li> */}
-        <li className="nav-item">
-          <NavLink className="nav-link" to="/testimonials" >Testimonials</NavLink>
-        </li>
+       
         <li className="nav-item">
           <NavLink className="nav-link" to="/calculator" >Calculator</NavLink>
         </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/news" >News</NavLink>
+        </li>
+        <li className="nav-item dropdown hover">
+        <a className="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Reviews
+        </a>
+        <ul className="dropdown-menu">
+          <li><Link className="dropdown-item" to="/testimonials">People</Link></li>
+          {/* <li><Link className="dropdown-item" to="/clients">Our Clients</Link></li> */}
+        </ul>
+      </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="/contact" >Contact</NavLink>
         </li>
       </ul>
       <div>
-        <button className="btn btn-outline-success mx-3" onClick={()=>navigator("/contact")}>Lets talk ?</button>
+        {
+          auth.admin?
+          <button className="btn btn-outline-success mx-3" onClick={()=>{
+            localStorage.removeItem("token")
+            navigator('/')
+            window.location.reload(false)
+          }}>Log-out</button>
+          :
+          <button className="btn btn-outline-success mx-3" onClick={()=>navigator("/contact")}>Lets talk ?</button>
+        }
         {/* <button className="btn btn-primary">Login</button> */}
       </div>
     </div>
@@ -70,14 +115,14 @@ export default function Header() {
   {/* Below navbar */}
   {
     active  && pathname === "/" &&
-  <div className={`container-fluid ${bgChangeNav} below-nav`}>
+  <div className={`container-fluid ${bgChangeNav} border-bottom below-nav`}>
   <div className="container">
-  <nav className={`navbar navbar-expand-lg ${bgChangeNav} p-0`}>
+  <nav className={`navbar navbar-expand-lg ${bgChangeNav}   p-0`}>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
   <div className="collapse navbar-collapse" id="navbarNav">
-    <ul className="navbar-nav">
+    <ul className="navbar-nav d-flex justify-content-between">
       <li className="nav-item mx-5">
         <a className="nav-link" href="#services">Services</a>
       </li>
@@ -90,17 +135,20 @@ export default function Header() {
       <li className="nav-item mx-5">
         <a className="nav-link" href="#testimonials">Testimonials</a>
       </li>
-      <li className="nav-item mx-5">
+      {/* <li className="nav-item mx-5">
         <a className="nav-link" href="#team">Team</a>
-      </li>
-      <li className="nav-item mx-5">
+      </li> */}
+      {/* <li className="nav-item mx-5">
         <a className="nav-link" href="#news">News</a>
-      </li>
+      </li> */}
       <li className="nav-item mx-5">
         <a className="nav-link" href="#map">Location</a>
       </li>
       <li className="nav-item mx-5">
         <a className="nav-link" href="#contact">Consult</a>
+      </li>
+      <li className="nav-item mx-5">
+        <a className="nav-link" href="#footer">Links</a>
       </li>
     </ul>
   </div>

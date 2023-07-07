@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
+import { Auth } from "../Admin/Authentications";
+
 export default function Footer() {
+  const auth = Auth()
   return (
     <>
       <div
-        className="container-fluid text-light py-3"
+        className="container-fluid text-light bg-dark py-3"
         style={{ background: "#14143e" }}
+        id="footer"
       >
         <div className="container py-3">
           <div className="row my-auto">
@@ -69,6 +73,13 @@ export default function Footer() {
             <div className="col-6 col-md">
               <h5>About</h5>
               <ul className="list-unstyled text-small">
+                { !auth.admin &&
+                  <li>
+                  <Link className="" to="/login">
+                    Admin
+                  </Link>
+                </li>
+}
                 <li>
                   <a className="" href="#team">
                     Team
@@ -82,11 +93,6 @@ export default function Footer() {
                 <li>
                   <a className="" href="#">
                     Privacy
-                  </a>
-                </li>
-                <li>
-                  <a className="" href="#">
-                    Terms
                   </a>
                 </li>
               </ul>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Services() {
   return (
     <div
@@ -32,9 +34,9 @@ export default function Services() {
                     confidence in financial integrity and operational
                     excellence.
                   </p>
-                  <a href="/services#audit" className="readmore stretched-link">
+                  <Link to="/audit-assurance" className="readmore stretched-link">
                     Read more <i className="bi bi-arrow-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -48,9 +50,9 @@ export default function Services() {
                     Your trusted partner for expert tax solutions: Direct and
                     indirect tax services tailored for your business
                   </p>
-                  <a href="/services#tax" className="readmore stretched-link">
+                  <Link to="/direct-indirect" className="readmore stretched-link">
                     Read more <i className="bi bi-arrow-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -64,9 +66,9 @@ export default function Services() {
                   <p>
                   Try our Tax Calculator! To estimate your taxes.
                   </p>
-                  <a href="/calculator" className="readmore stretched-link">
+                  <Link to="/calculator" className="readmore stretched-link">
                     check tax <i className="bi bi-arrow-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -80,9 +82,9 @@ export default function Services() {
                     NRI Tax Compliance Experts: Ensuring smooth and hassle-free
                     tax obligations for Non-Resident Indians (NRIs).
                   </p>
-                  <a href="/services#nri" className="readmore stretched-link">
+                  <Link to="/nri" className="readmore stretched-link">
                     Read more <i className="bi bi-arrow-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -97,9 +99,9 @@ export default function Services() {
                     Establishment Services for Building and Scaling Successful
                     Ventures.
                   </p>
-                  <a href="/services" className="readmore stretched-link">
+                  <Link to="/business-startup" className="readmore stretched-link">
                     Read more <i className="bi bi-arrow-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -113,9 +115,9 @@ export default function Services() {
                     Accurate and Reliable Bookkeeping Solutions: Keeping your
                     financial records in order with precision and expertise.
                   </p>
-                  <a href="/services" className="readmore stretched-link">
+                  <Link to="/book-keeping" className="readmore stretched-link">
                     Read more <i className="bi bi-arrow-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

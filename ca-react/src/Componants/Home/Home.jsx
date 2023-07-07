@@ -6,45 +6,45 @@ import Contact from "../Contact/Contact";
 import Map from "../Footer/Map";
 import "../Home/Home.css";
 // import ClientHome from "../Info/ClientHome";
-import { useEffect, useState } from "react";
-import News from "../news/News";
+// import { useEffect, useState } from "react";
+// import News from "../news/News";
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
-  const [article, setArticle] = useState([]);
+  // const [article, setArticle] = useState([]);
   const navigator = useNavigate()
 
-  useEffect(() => {
-    const fetching = () => {
-      fetch(
-        // "https://gnews.io/api/v4/search?q=tax&lang=en&country=in&max=10&apikey=0592711ca96bfa23d52fbd0cf0e4128b"
-      )
-        .then((res) => res.json())
-        .then((data) => setArticle(data.articles));
-    };
-    fetching();
-  }, []);
+  // useEffect(() => {
+  //   const fetching = () => {
+  //     fetch(
+  //       "https://gnews.io/api/v4/search?q=tax&lang=en&country=in&max=10&apikey=0592711ca96bfa23d52fbd0cf0e4128b"
+  //     )
+  //       .then((res) => res.json())
+  //       .then((data) => setArticle(data.articles));
+  //   };
+  //   fetching();
+  // }, []);
 
-  const mapping = article?.map((newss, n) => {
-    return (
-      <>
-        <div key={n}>
-          <p className="mx-3">
-            <a href={`${newss?.url}`}>{newss?.title}</a>
-          </p>
-        </div>
-      </>
-    );
-  });
+  // const mapping = article?.map((newss, n) => {
+  //   return (
+  //     <>
+  //       <div key={n}>
+  //         <p className="mx-3">
+  //           <a href={`${newss?.url}`}>{newss?.title}</a>
+  //         </p>
+  //       </div>
+  //     </>
+  //   );
+  // });
 
   return (
     <div id="home">
       <div className="">
-        <div className="row mt-5 pt-4">
+        {/* <div className="row mt-5 pt-4">
           <div className="col-md-12 col-lg-12 heading-news">
             <div className="ul py-1">{mapping}</div>
           </div>
-        </div>
+        </div> */}
         {/* <div className="row bg-home">
           <div className="col-md-12 col-lg-12">
             <div
@@ -118,15 +118,15 @@ export default function Home() {
             <div className="text-light">
               <h1 className="display-4">Expert Financial Guidance </h1>
               <hr />
-              <p>
+              <p className="lead">
                 Our charted accountant team brings extensive knowledge and
                 expertise to guide you through complex financial challenges.
                 From tax planning to financial analysis, we provide tailored
                 solutions to optimize your financial performance.
               </p>
               <div className="my-4">
-              <button className="btn btn-light mr-3" onClick={()=>navigator("/contact")}>Lets Discuss</button>
-              <button className="btn btn-light" onClick={()=>window.location.href = "tel:9133417279"}>Call us</button>
+              <button className="btn btn-light mr-3" onClick={()=>navigator("/welcome")}>Learn more</button>
+              <button className="btn btn-light" onClick={()=>window.location.href = "tel:9133417279"}>Contact us</button>
               </div>
             </div>
           </div>
@@ -143,8 +143,8 @@ export default function Home() {
       {/* <Clientss/> */}
       {/* <ClientHome/> */}
       {/* <Team /> */}
+      {/* <News/> */}
       <Testimonials />
-      <News />
       <Contact />
       <Map />
     </div>

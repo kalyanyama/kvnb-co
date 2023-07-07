@@ -11,10 +11,10 @@ export default function Team() {
         <div className="col-md-4 mx-auto my-3 col-lg-4 card rounded-lg p-3 bg-light shadow ">
             <div className="card-front">
           <img src="/member1.png" alt="" className="img-fluid"/>
-            <h6 className="font-weight-bold text-center">K Vishwambhar</h6>
+            <h6 className="font-weight-bold text-center">K Vishwamber</h6>
             </div>
             <div className=" card-back">
-              <h2>Vishwaber Kondlapally</h2>
+              <h2>Vishwamber Kondlapally</h2>
               <h5><b>B.com CA</b></h5>
               <p>Chartered acoountant.</p>
               <p>Mobile :<span><a href="tel:9133417297">+91 9133417297</a></span></p>

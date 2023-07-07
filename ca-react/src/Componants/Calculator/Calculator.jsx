@@ -111,8 +111,6 @@ export default function Calculator() {
     }
     setNewTax(newTaxTotal);
   };
-  console.log(updatedIncome)
-  console.log(MinusAmt)
 
   return (
     <div className="container-fluid" id="calculator">

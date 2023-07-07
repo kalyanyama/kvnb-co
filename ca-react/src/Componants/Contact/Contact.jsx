@@ -1,12 +1,14 @@
 import "./Contact.css"
 export default function Contact() {
   return (
-    <div className="container-fluid" id="write-to-us">
-      <div className="container py-5"  data-aos="zoom-out">
+    <div id="write-to-us">
+    <div className="container-fluid" id="contact">
+      <div className="container py-5"  data-aos="zoom-out" >
         <div className="section-header mt-4 text-dark py-4">
-          <h1 className="font-weight-bold display-3 text-light">Write to us. K V N B & co.</h1>
+          <h1 className="font-weight-bold display-4 text-light">Write to us. K V N B & co.</h1>
+          <h5 className="text-light">We are always ready to help you out regarding all your queries.</h5>
         </div>
-        <div className="row"  id="contact">
+        <div className="row" >
           <div className="col-md-6 col-lg-6 my-auto">
         <div>
         <h2 className="font-weight-bold text-primary">Present address</h2>
@@ -16,11 +18,13 @@ export default function Contact() {
         <div>
         <h2 className="font-weight-bold text-primary">Mobile number</h2>
         <p><a className="text-light" href="tel:+919133417279"> +91 91334 17279</a></p>
+        <p><a className="text-light" href="tel:+9191334982729"> +91 91334 98272</a></p>
         </div>
         <br/>
         <div>
         <h2 className="font-weight-bold text-primary">Email address</h2>
         <p><a className="text-light" href="mailto:ca.vishwamber@gmail.com"> ca.vishwamber@gmail.com</a></p>
+        <p><a className="text-light" href="mailto:cabharathnalla.ncbr@gmail.com"> cabharathnalla.ncbr@gmail.com</a></p>
         <br/>
 
       </div>
@@ -73,7 +77,7 @@ export default function Contact() {
                 />
               </div>
               <div className="text-center">
-                <button type="submit" className="btn btn-outline-primary">
+                <button type="submit" className="btn btn-primary">
                   Submit
                 </button>
               </div>
@@ -81,6 +85,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

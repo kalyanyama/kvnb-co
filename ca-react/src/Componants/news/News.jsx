@@ -8,7 +8,7 @@ export default function News() {
   useEffect(() => {
    const fetching =()=>{
     fetch(
-      //  "https://gnews.io/api/v4/search?q=tax%20AND%20GST&lang=en&country=in&max=10&apikey=0592711ca96bfa23d52fbd0cf0e4128b"
+       "https://gnews.io/api/v4/search?q=tax%20AND%20GST&lang=en&country=in&max=10&apikey=0592711ca96bfa23d52fbd0cf0e4128b"
      )
        .then((res) => res.json())
        .then((data) => setArticle(data.articles));
@@ -22,13 +22,13 @@ export default function News() {
   const mapping = newsLists?.map((newss, n)=>{
    return(
     <>
-    <div className="col-md-2 col-lg-2 py-3 my-2" key={n}>
+    <div className="col-md-3 col-lg-3 border border-2 p-5 " key={n}>
         <h6 className=""><span className="text-light text-uppercase fw-bold">Heading : </span>{newss?.title}</h6>
         <a href={newss?.url} target="_blanck" className="float-right">Read more</a>
     </div>
     </>
    )
-}).slice(0, 6)
+}).slice(0, 8)
 
   return (
     <div className="container-fluid mt-5 p-4" style={{background : "#4379c6"}} id="news">

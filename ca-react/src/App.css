@@ -44,10 +44,13 @@ body{
 }
 
 #testimonials{
-  background-image: url("/imgs/testimonials.jpg");
+  /* background-image: url("/imgs/testimonials.jpg");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  color: black;
+  background: #5a86ff;
+  padding: 3% 0px;
 }
 
 .active{
