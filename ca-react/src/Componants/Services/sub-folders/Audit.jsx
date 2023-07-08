@@ -12,7 +12,7 @@ export default function Audit() {
                   AUDIT & ASSURANCE <span className="text-muted"></span>
                 </h2>
                 <p className="lead">
-                  As a dedicated team at KVNB & Co, specializing in audit and
+                  As a dedicated team at K V N B & Co, specializing in audit and
                   assurance services, our primary goal is to uphold the
                   financial integrity and trust of our clients' businesses. With
                   extensive experience and a deep knowledge of accounting
@@ -71,7 +71,7 @@ export default function Audit() {
                   compliance with evolving financial standards.
                 </p>
                 <p className="lead">
-                  The value we bring as a team at KVNB & Co specializing in
+                  The value we bring as a team at K V N B & Co specializing in
                   audit and assurance services extends beyond the numbers. We
                   are dedicated to enhancing our clients' operations,
                   identifying areas for improvement, and providing meaningful
@@ -90,7 +90,7 @@ export default function Audit() {
                   delivering the best possible outcomes for our clients.
                 </p>
                 <h6 className="lead">
-                  In conclusion, as a dedicated team at KVNB & Co, specializing
+                  In conclusion, as a dedicated team at K V N B & Co, specializing
                   in audit and assurance services, our passion lies in upholding
                   financial integrity, ensuring compliance, and providing
                   valuable recommendations that contribute to the success of our

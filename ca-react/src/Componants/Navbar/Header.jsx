@@ -105,7 +105,7 @@ export default function Header() {
             window.location.reload(false)
           }}>Log-out</button>
           :
-          <button className="btn btn-outline-success mx-3" onClick={()=>navigator("/contact")}>Lets talk ?</button>
+          ""
         }
         {/* <button className="btn btn-primary">Login</button> */}
       </div>

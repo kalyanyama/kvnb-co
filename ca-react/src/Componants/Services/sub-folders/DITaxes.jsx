@@ -12,7 +12,7 @@ export default function DITaxes() {
                   DIRECT & INDIRECT TAXES<span className="text-muted"></span>
                 </h2>
                 <p className="lead">
-                  At KVNB & Co, we specialize in providing expert assistance to
+                  At K V N B & Co, we specialize in providing expert assistance to
                   clients in managing their direct and indirect taxes. We
                   understand the intricacies of tax laws and the significance of
                   tax planning and compliance for individuals and businesses.
@@ -35,7 +35,7 @@ export default function DITaxes() {
                 </p>
                 <p className="lead">
                   Preparing accurate tax returns is vital to avoid errors,
-                  penalties, and audits. Our team at KVNB & Co is meticulous in
+                  penalties, and audits. Our team at K V N B & Co is meticulous in
                   our approach, ensuring that every detail is carefully reviewed
                   and accounted for. We stay up to date with the latest tax
                   regulations, leveraging our knowledge to accurately prepare
@@ -55,7 +55,7 @@ export default function DITaxes() {
                   burdens, we empower our clients to reinvest their savings into
                   their businesses or personal financial goals. Navigating the
                   complex landscape of tax laws and regulations can be
-                  overwhelming. At KVNB & Co, we provide guidance and support to
+                  overwhelming. At K V N B & Co, we provide guidance and support to
                   our clients at every step. We stay abreast of the latest tax
                   developments and changes, ensuring that our clients remain
                   compliant with applicable laws. Our proactive approach helps
@@ -65,7 +65,7 @@ export default function DITaxes() {
                   core business activities and personal pursuits.
                 </p>
                 <h6 className="lead">
-                  In conclusion, KVNB & Co specializes in assisting clients in
+                  In conclusion, K V N B & Co specializes in assisting clients in
                   managing their direct and indirect taxes with expertise and
                   precision. With a focus on tax planning, compliance, and
                   personalized solutions, we help individuals and businesses
@@ -76,7 +76,7 @@ export default function DITaxes() {
                   financial efficiency while maintaining compliance. With our
                   knowledge of tax regulations and strategic approaches, we help
                   clients optimize their tax positions and provide peace of
-                  mind. At KVNB & Co, we are dedicated to assisting our clients
+                  mind. At K V N B & Co, we are dedicated to assisting our clients
                   in achieving their tax-related goals and driving their
                   long-term success.
                 </h6>

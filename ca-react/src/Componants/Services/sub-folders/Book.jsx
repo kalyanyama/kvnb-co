@@ -12,7 +12,7 @@ export default function Book() {
                   BOOK KEEPING <span className="text-muted"></span>
                 </h2>
                 <p className="lead">
-                  At KVNB & Co, we specialize in providing comprehensive
+                  At K V N B & Co, we specialize in providing comprehensive
                   bookkeeping solutions for businesses. We understand the
                   paramount importance of accurate and organized financial
                   records in facilitating effective decision-making and ensuring
@@ -42,7 +42,7 @@ export default function Book() {
                   performance.
                 </p>
                 <p className="lead">
-                  Our team at KVNB & Co takes pride in our commitment to
+                  Our team at K V N B & Co takes pride in our commitment to
                   accuracy. We understand that even the smallest discrepancy or
                   error can have significant implications for a business's
                   financial records. Therefore, we employ rigorous quality
@@ -52,13 +52,13 @@ export default function Book() {
                   accuracy and reliability of their financial data.
                 </p>
                 <p className="lead">
-                  By entrusting their bookkeeping needs to KVNB & Co, our
+                  By entrusting their bookkeeping needs to K V N B & Co, our
                   clients can focus on their core business activities with peace
                   of mind, knowing that their financial records are in the hands
                   of experts. Our comprehensive bookkeeping solutions not only
                   save our clients time and effort but also provide them with a
                   clear understanding of their financial standing and
-                  performance. In addition to our expertise in bookkeeping, KVNB
+                  performance. In addition to our expertise in bookkeeping, K V N B
                   & Co offers personalized support and guidance to our clients.
                   We strive to develop long-lasting relationships built on trust
                   and open communication. Our team is readily available to
@@ -66,14 +66,14 @@ export default function Book() {
                   advice tailored to our clients' unique business objectives.
                 </p>
                 <h6 className="lead">
-                  In conclusion, KVNB & Co specializes in delivering
+                  In conclusion, K V N B & Co specializes in delivering
                   comprehensive bookkeeping solutions for businesses. With a
                   focus on accuracy, organization, and adherence to accounting
                   standards and regulations, we ensure that our clients'
                   financial records are meticulously maintained. By providing
                   valuable insights into financial health, identifying trends,
                   and facilitating informed strategic decisions, we empower
-                  businesses to achieve their goals. With KVNB & Co, clients can
+                  businesses to achieve their goals. With K V N B & Co, clients can
                   rest assured that their financial records are in expert hands,
                   allowing them to concentrate on their core business activities
                   and drive success.

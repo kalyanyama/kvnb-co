@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   // const [article, setArticle] = useState([]);
-  const navigator = useNavigate()
+  const navigator = useNavigate();
 
   // useEffect(() => {
   //   const fetching = () => {
@@ -45,74 +45,11 @@ export default function Home() {
             <div className="ul py-1">{mapping}</div>
           </div>
         </div> */}
-        {/* <div className="row bg-home">
-          <div className="col-md-12 col-lg-12">
-            <div
-              id="carouselExampleFade"
-              className="carousel slide carousel-fade"
-              data-ride="carousel"
-            >
-              <div className="carousel-inner">
-                <div className="carousel-item active img-home">
-                  <img src="home-1.jpg" className="d-block w-100" alt="..." />
-                  <div className="text-home  d-md-block d-none">
-                    <div className="content-home">
-                    <h1 className="text-center">Expert Financial Guidance </h1><hr/>
-                    <p>Our charted accountant team brings extensive knowledge and expertise to guide you through complex financial challenges. From tax planning to financial analysis, we provide tailored solutions to optimize your financial performance.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <img src="home-2.jpg" className="d-block w-100" alt="..." />
-                  <div className="text-home  d-md-block d-none">
-                    <div className="content-home">
-                    <h1 className="text-center">Streamlined Processes </h1><hr/>
-                    <p> Say goodbye to tedious bookkeeping and financial management tasks. Our charted accountant team streamlines your processes, leveraging advanced software and tools to ensure accuracy, efficiency, and compliance. Focus on growing your business while we take care of the numbers.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <img src="home-3.jpg" className="d-block w-100" alt="..." />
-                  <div className="text-home d-md-block d-none">
-                    <div className="content-home">
-                    <h1 className="text-center">Proactive Risk Management </h1><hr/>
-                    <p> Minimize risks and maximize opportunities with our proactive approach to financial management. Our charted accountants analyze market trends, identify potential pitfalls, and develop strategies to safeguard your financial interests. Stay one step ahead and make informed decisions with our support.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button
-                className="carousel-control-prev"
-                type="button"
-                data-target="#carouselExampleFade"
-                data-slide="prev"
-              >
-                <span
-                  className="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="sr-only">Previous</span>
-              </button>
-              <button
-                className="carousel-control-next"
-                type="button"
-                data-target="#carouselExampleFade"
-                data-slide="next"
-              >
-                <span
-                  className="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="sr-only">Next</span>
-              </button>
-            </div>
-          </div>
-        </div> */}
       </div>
 
-        <div className="home-main">
+      <div className="home-main">
         <div className="content-home">
-        <div className="container">
+          {/* <div className="container">
         <div className="row">
           <div className="col-md-5 col-lg-5 my-auto" data-aos="zoom-out">
             <div className="text-light">
@@ -126,17 +63,170 @@ export default function Home() {
               </p>
               <div className="my-4">
               <button className="btn btn-light mr-3" onClick={()=>navigator("/welcome")}>Learn more</button>
-              <button className="btn btn-light" onClick={()=>window.location.href = "tel:9133417279"}>Contact us</button>
+              <button className="btn btn-light" onClick={()=>window.location.href = "tel:9133417297"}>Contact us</button>
               </div>
             </div>
           </div>
           <div className="col-md-7 col-lg-7">
-          {/* <img src="home-3.jpg" className="img-fluid" alt="home-content"/> */}
           </div>
         </div>
+        </div> */}
+          <div
+            // id="carouselExampleCaptions"
+            // className="container carousel slide"
+            // data-bs-ride="carousel fade"
+            id="carouselExampleSlidesOnly"
+            className="container carousel slide"
+            data-ride="carousel"
+          >
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <div className="d-block w-100">
+                  <div className="text-light">
+                    <h1 className="display-4">AUDIT & ASSURANCE </h1>
+                    <hr />
+                    <p className="lead">
+                      Audit and Assurance: Trustworthy scrutiny, delivering
+                      confidence in financial integrity and operational
+                      excellence.
+                    </p>
+                    <div className="my-4">
+                      <button
+                        className="btn btn-light mr-3"
+                        onClick={() => navigator("/welcome")}
+                      >
+                        Learn more
+                      </button>
+                      <button
+                        className="btn btn-light"
+                        onClick={() =>
+                          (window.location.href = "tel:9133417297")
+                        }
+                      >
+                        Contact us
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <div className="d-block w-100">
+                  <div className="text-light">
+                    <h1 className="display-4">DIRECT & INDIRECT TAXES </h1>
+                    <hr />
+                    <p className="lead">
+                      Your trusted partner for expert tax solutions: Direct and
+                      indirect tax services tailored for your business
+                    </p>
+                    <div className="my-4">
+                      <button
+                        className="btn btn-light mr-3"
+                        onClick={() => navigator("/welcome")}
+                      >
+                        Learn more
+                      </button>
+                      <button
+                        className="btn btn-light"
+                        onClick={() =>
+                          (window.location.href = "tel:9133417297")
+                        }
+                      >
+                        Contact us
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <div className="d-block w-100">
+                  <div className="text-light">
+                    <h1 className="display-4">NRI TAX COMPLIANCES </h1>
+                    <hr />
+                    <p className="lead">
+                      NRI Tax Compliance Experts: Ensuring smooth and
+                      hassle-free tax obligations for Non-Resident Indians
+                      (NRIs).
+                    </p>
+                    <div className="my-4">
+                      <button
+                        className="btn btn-light mr-3"
+                        onClick={() => navigator("/welcome")}
+                      >
+                        Learn more
+                      </button>
+                      <button
+                        className="btn btn-light"
+                        onClick={() =>
+                          (window.location.href = "tel:9133417297")
+                        }
+                      >
+                        Contact us
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <div className="d-block w-100">
+                  <div className="text-light">
+                    <h1 className="display-4">BUSINESS STARTUP & ESTABLISHMENT SERVICES </h1>
+                    <hr />
+                    <p className="lead">
+                    Unlock Your Business Potential: Comprehensive Startup &
+                    Establishment Services for Building and Scaling Successful
+                    Ventures.
+                    </p>
+                    <div className="my-4">
+                      <button
+                        className="btn btn-light mr-3"
+                        onClick={() => navigator("/welcome")}
+                      >
+                        Learn more
+                      </button>
+                      <button
+                        className="btn btn-light"
+                        onClick={() =>
+                          (window.location.href = "tel:9133417297")
+                        }
+                      >
+                        Contact us
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <div className="d-block w-100">
+                  <div className="text-light">
+                    <h1 className="display-4">BOOK KEEPING SERVICES </h1>
+                    <hr />
+                    <p className="lead">
+                    Accurate and Reliable Bookkeeping Solutions: Keeping your
+                    financial records in order with precision and expertise.
+                    </p>
+                    <div className="my-4">
+                      <button
+                        className="btn btn-light mr-3"
+                        onClick={() => navigator("/welcome")}
+                      >
+                        Learn more
+                      </button>
+                      <button
+                        className="btn btn-light"
+                        onClick={() =>
+                          (window.location.href = "tel:9133417297")
+                        }
+                      >
+                        Contact us
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
 
       <Services />
       <About />

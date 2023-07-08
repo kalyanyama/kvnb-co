@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import { Auth } from "../Admin/Authentications";
+// import { Auth } from "../Admin/Authentications";
 
 export default function Footer() {
-  const auth = Auth()
+  // const auth = Auth()
   return (
     <>
       <div
@@ -16,21 +16,28 @@ export default function Footer() {
               <h5>Features</h5>
               <ul className="list-unstyled text-small">
                 <li>
-                  <a className="">Expertise in accounting </a>
+                  <Link  to="/welcome">Expertise in accounting </Link>
                 </li>
                 <li>
-                  <a className="">Auditing & taxation</a>
+                  <Link to="/audit-assurance">Auditing & taxation</Link>
                 </li>
                 <li>
-                  <a className="">Certified professionals</a>
+                  <Link to='/team'>Certified professionals</Link>
                 </li>
                 <li>
-                  <a className="">Optimized tax benefits</a>
+                  <Link to='/direct-indirect'>Optimized tax benefits</Link>
+                </li>
+             
+                <li>
+                  <Link to='/direct-indirect'>Try our tax Calculator</Link>
+                </li>
+                <li>
+                  <Link to='/direct-indirect'>Customized book-keeping</Link>
                 </li>
               </ul>
             </div>
             <div className="col-6 col-md">
-              <h5>Links</h5>
+              <h5>External Links</h5>
               <ul className="list-unstyled text-small">
                 <li>
                   <a
@@ -73,26 +80,32 @@ export default function Footer() {
             <div className="col-6 col-md">
               <h5>About</h5>
               <ul className="list-unstyled text-small">
-                { !auth.admin &&
+                {/* { !auth.admin &&
                   <li>
                   <Link className="" to="/login">
                     Admin
                   </Link>
                 </li>
-}
+                } */}
                 <li>
-                  <a className="" href="#team">
+                  <Link className="" to="/welcome">
+                    K V N B & Co.
+                  </Link>
+                </li>
+                <li>
+                  <Link className="" to="/team">
                     Team
-                  </a>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link className="" to="/contact">
+                    Contact
+                  </Link>
                 </li>
                 <li>
                   <a className="" href="#map">
                     Location
-                  </a>
-                </li>
-                <li>
-                  <a className="" href="#">
-                    Privacy
                   </a>
                 </li>
               </ul>
@@ -130,7 +143,8 @@ export default function Footer() {
             </div>
             {/* <p className="float-right"><a href="#">Back to top</a></p> */}
             <p className="text-center">
-              &copy; 2023 K V N B & CO.
+              &copy; K V N B & Co. - 2023 All rights reserved.
+              
             </p>
             <p className="text-center">
               Designed by{" "}

@@ -25,18 +25,18 @@ import Business from "./Componants/Services/sub-folders/Business";
 import DITaxes from "./Componants/Services/sub-folders/DITaxes";
 import Nri from "./Componants/Services/sub-folders/Nri";
 
-import Login from "./Componants/Admin/Login";
-import Dashboard from "./Componants/Admin/Dashboard";
-import Calculated from "./Componants/Admin/Calculated";
-import Contacted from "./Componants/Admin/Contacted";
-import { Authentications } from "./Componants/Admin/Authentications";
-import { AuthCheckAdmin } from "./Componants/Admin/Authcheck";
+// import Login from "./Componants/Admin/Login";
+// import Dashboard from "./Componants/Admin/Dashboard";
+// import Calculated from "./Componants/Admin/Calculated";
+// import Contacted from "./Componants/Admin/Contacted";
+// import { Authentications } from "./Componants/Admin/Authentications";
+// import { AuthCheckAdmin } from "./Componants/Admin/Authcheck";
 
 function App() {
   return (
     <div className="main">
       <BrowserRouter>
-        <Authentications>
+        {/* <Authentications> */}
         <Header />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -57,9 +57,9 @@ function App() {
 
             <Route path="/welcome" element={<Welcome />} />
 
-            <Route path="/login" element={<Login />} />
+            {/* <Route path="/login" element={<Login />} /> */}
 
-            <Route
+            {/* <Route
               path="/dashboard"
               element={
                 <AuthCheckAdmin>
@@ -83,11 +83,11 @@ function App() {
                   </AuthCheckAdmin>
                 }
               />
-            </Route>
+            </Route> */}
           </Routes>
           <ScrollBtn />
           <Footer />
-        </Authentications>
+        {/* </Authentications> */}
       </BrowserRouter>
     </div>
   );

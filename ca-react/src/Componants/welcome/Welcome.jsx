@@ -6,11 +6,11 @@ export default function welcome() {
           <div className="col-md col my-5">
             <div className="section-header text-dark">
               <h1 className="font-weight-bold display-4">
-                Welcome to KVNB & Co - Your Trusted Financial Services Provider
+                Welcome to K V N B & Co - Your Trusted Financial Services Provider
               </h1>
             </div>
             <p  className="lead">
-              At KVNB & Co, we understand that managing your finances
+              At K V N B & Co, we understand that managing your finances
               effectively is crucial for personal and business success. That's
               why we are dedicated to offering comprehensive financial services
               tailored to meet your unique needs. Welcome to our website, your
@@ -19,7 +19,7 @@ export default function welcome() {
             </p>
             <h3 className="text-center"> Who We Are: </h3>
             <p className="lead">
-              KVNB & Co is a leading provider of financial services,
+              K V N B & Co is a leading provider of financial services,
               specializing in areas such as accounting, taxation, audit, and
               financial planning. With a team of highly skilled Chartered
               Accountants and industry experts, we are committed to delivering
@@ -102,7 +102,7 @@ export default function welcome() {
               Explore our website to learn more about our services, meet our
               team, and gain valuable insights through our resourceful blog.
               When you're ready to take control of your financial future, reach
-              out to us to schedule a consultation. Let KVNB & Co be your
+              out to us to schedule a consultation. Let K V N B & Co be your
               trusted partner in achieving financial success.
             </h6>
           </div>
