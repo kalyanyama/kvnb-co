@@ -6,11 +6,13 @@ export default function welcome() {
           <div className="col-md col my-5">
             <div className="section-header text-dark">
               <h1 className="font-weight-bold display-4">
-                Welcome to K V N B & Co - Your Trusted Financial Services Provider
+                Welcome to K V N B & CO.
+                <br />
+                <span className="display-5">Chartered Accountants</span>
               </h1>
             </div>
-            <p  className="lead">
-              At K V N B & Co, we understand that managing your finances
+            <p className="lead">
+              At K V N B & CO, we understand that managing your finances
               effectively is crucial for personal and business success. That's
               why we are dedicated to offering comprehensive financial services
               tailored to meet your unique needs. Welcome to our website, your
@@ -19,7 +21,7 @@ export default function welcome() {
             </p>
             <h3 className="text-center"> Who We Are: </h3>
             <p className="lead">
-              K V N B & Co is a leading provider of financial services,
+              K V N B & CO is a leading provider of financial services,
               specializing in areas such as accounting, taxation, audit, and
               financial planning. With a team of highly skilled Chartered
               Accountants and industry experts, we are committed to delivering
@@ -47,7 +49,7 @@ export default function welcome() {
               regulations and ensures that you take advantage of available
               deductions and credits while meeting your tax obligations.
             </p>
-            <h6  className="lead">3. Audit and Assurance:</h6>
+            <h6 className="lead">3. Audit and Assurance:</h6>
             <p className="lead">
               Ensure the accuracy, reliability, and transparency of your
               financial statements through our rigorous audit and assurance
@@ -55,7 +57,7 @@ export default function welcome() {
               evaluations to enhance stakeholder confidence and meet regulatory
               requirements.
             </p>
-            <h6  className="lead">4. Financial Planning and Advisory:</h6>
+            <h6 className="lead">4. Financial Planning and Advisory:</h6>
             <p className="lead">
               Take control of your financial future with our comprehensive
               financial planning and advisory services. We assess your current
@@ -63,7 +65,7 @@ export default function welcome() {
               strategies to maximize your wealth, minimize risk, and achieve
               long-term success.
             </p>
-            <h6  className="lead">5. Business Consulting:</h6>
+            <h6 className="lead">5. Business Consulting:</h6>
             <p className="lead">
               Unlock your business's full potential with our strategic business
               consulting services. We offer expert guidance on various aspects,
@@ -74,12 +76,12 @@ export default function welcome() {
             <h3 className="text-center">Why Choose Us:</h3>
             <div>
               <ul>
-                <li  className="lead">
+                <li className="lead">
                   Expertise: Our team of Chartered Accountants brings extensive
                   knowledge and experience to every engagement, ensuring the
                   highest standards of service.
                 </li>
-                <li  className="lead">
+                <li className="lead">
                   Personalized Approach: We understand that each client is
                   unique, and we tailor our services to meet your specific
                   requirements, offering customized solutions that align with
@@ -90,7 +92,7 @@ export default function welcome() {
                   confidentiality, and transparent communication, building
                   strong relationships based on trust and integrity.
                 </li>
-                <li  className="lead">
+                <li className="lead">
                   Technology-driven Solutions: We leverage the latest financial
                   software and tools to streamline processes, enhance
                   efficiency, and deliver accurate results in a timely manner.
@@ -98,11 +100,11 @@ export default function welcome() {
               </ul>
             </div>
             <h3 className="text-center">Get Started Today:</h3>
-            <h6  className="lead">
+            <h6 className="lead">
               Explore our website to learn more about our services, meet our
               team, and gain valuable insights through our resourceful blog.
               When you're ready to take control of your financial future, reach
-              out to us to schedule a consultation. Let K V N B & Co be your
+              out to us to schedule a consultation. Let K V N B & CO be your
               trusted partner in achieving financial success.
             </h6>
           </div>

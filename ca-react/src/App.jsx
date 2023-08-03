@@ -24,6 +24,7 @@ import Book from "./Componants/Services/sub-folders/Book";
 import Business from "./Componants/Services/sub-folders/Business";
 import DITaxes from "./Componants/Services/sub-folders/DITaxes";
 import Nri from "./Componants/Services/sub-folders/Nri";
+import Accounts from "./Componants/Services/sub-folders/Accounts";
 
 // import Login from "./Componants/Admin/Login";
 // import Dashboard from "./Componants/Admin/Dashboard";
@@ -47,11 +48,12 @@ function App() {
             <Route path="/testimonials" element={<TestimonialsFull />} />
             <Route path="/clients" element={<Clientss />} />
             <Route path="/news" element={<News />} />
-            <Route path="/calculator" element={<Calculator />} />
+            {/* <Route path="/calculator" element={<Calculator />} /> */}
 
             <Route path="/audit-assurance" element={<Audit />} />
             <Route path="/book-keeping" element={<Book />} />
             <Route path="/business-startup" element={<Business />} />
+            <Route path="/accounts" element={<Accounts />} />
             <Route path="/direct-indirect" element={<DITaxes />} />
             <Route path="/nri" element={<Nri />} />
 

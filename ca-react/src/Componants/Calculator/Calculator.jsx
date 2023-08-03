@@ -15,15 +15,15 @@ export default function Calculator() {
   const handleCalculations = (e) => {
     e.preventDefault();
 
-    emailjs.send("service_8wjhhql", "template_vxdxsi6", {
-      from_name : userName,
-      from_mobile : userMobile
-    }, "b_nBUkZl0EkDLLatq")
-    .then(function(response) {
-       console.log(response.status, response.text);
-    }, function(error) {
-       console.log(error);
-    });
+        emailjs.send("service_8wjhhql", "template_vxdxsi6", {
+          from_name : userName,
+          from_mobile : userMobile
+        }, "b_nBUkZl0EkDLLatq")
+        .then(function(response) {
+          console.log(response.status, response.text);
+        }, function(error) {
+          console.log(error);
+        });
 
     setResults(true);
     

@@ -13,7 +13,7 @@ export default function Business() {
                   <span className="text-muted"></span>
                 </h2>
                 <p className="lead">
-                  At K V N B & Co, we specialize in providing comprehensive
+                  At K V N B & CO, we specialize in providing comprehensive
                   assistance to clients in business start-up and establishment.
                   We understand the challenges entrepreneurs face when
                   navigating the complex financial and regulatory landscape of
@@ -72,7 +72,7 @@ export default function Business() {
                   towards growth and profitability.
                 </p>
                 <h6 className="lead">
-                  In conclusion, K V N B & Co specializes in assisting clients with
+                  In conclusion, K V N B & CO specializes in assisting clients with
                   business start-up and establishment. Through comprehensive
                   guidance and support, we help entrepreneurs navigate the
                   complex financial and regulatory landscape of starting a

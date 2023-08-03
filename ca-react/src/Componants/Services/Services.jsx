@@ -28,13 +28,16 @@ export default function Services() {
                   <div className="icon">
                     <i className="bi bi-activity"></i>
                   </div>
-                  <h3>AUDIT & ASSURANCE</h3>
+                  <h3>AUDITING & ASSURANCE</h3>
                   <p>
-                    Audit and Assurance: Trustworthy scrutiny, delivering
+                    Auditing and Assurance: Trustworthy scrutiny, delivering
                     confidence in financial integrity and operational
                     excellence.
                   </p>
-                  <Link to="/audit-assurance" className="readmore stretched-link">
+                  <Link
+                    to="/audit-assurance"
+                    className="readmore stretched-link"
+                  >
                     Read more <i className="bi bi-arrow-right"></i>
                   </Link>
                 </div>
@@ -50,7 +53,10 @@ export default function Services() {
                     Your trusted partner for expert tax solutions: Direct and
                     indirect tax services tailored for your business
                   </p>
-                  <Link to="/direct-indirect" className="readmore stretched-link">
+                  <Link
+                    to="/direct-indirect"
+                    className="readmore stretched-link"
+                  >
                     Read more <i className="bi bi-arrow-right"></i>
                   </Link>
                 </div>
@@ -61,12 +67,13 @@ export default function Services() {
                   <div className="icon">
                     <i className="bi bi-calculator"></i>
                   </div>
-                  <h3>TAX CALCULATOR </h3>
+                  <h3>ACCOUNTS OUTSOURCING</h3>
                   <br />
                   <p>
-                  Try our Tax Calculator! To estimate your taxes.
+                    A refinance allows you to take out new personal loans that
+                    pay off your current mortgage.
                   </p>
-                  <Link to="/calculator" className="readmore stretched-link">
+                  <Link to="/accounts" className="readmore stretched-link">
                     check tax <i className="bi bi-arrow-right"></i>
                   </Link>
                 </div>
@@ -99,7 +106,10 @@ export default function Services() {
                     Establishment Services for Building and Scaling Successful
                     Ventures.
                   </p>
-                  <Link to="/business-startup" className="readmore stretched-link">
+                  <Link
+                    to="/business-startup"
+                    className="readmore stretched-link"
+                  >
                     Read more <i className="bi bi-arrow-right"></i>
                   </Link>
                 </div>

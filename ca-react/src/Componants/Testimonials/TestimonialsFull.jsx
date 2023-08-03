@@ -5,10 +5,10 @@ export default function TestimonialsFull() {
       <div className="container p-5" data-aos="zoom-out">
         <div className="container my-5">
           <div className="row">
-            <div className="col-md-11 col-lg-11 mx-auto">
+            <div className="col-md col-lg mx-auto">
               <h1 className="text-light display-5 font-weight-bold">
-                What <br /> people are{" "}
-                <span className="text-light">saying</span>
+                People reviews
+                {/* <span className="text-light">saying</span> */}
               </h1>
               <hr className="hr-sm text-light" />
             </div>
@@ -26,11 +26,11 @@ export default function TestimonialsFull() {
                 </h6>
               </div>
               <h6 className="my-2">
-                I've been relying on K V N B & Co. for my accounting needs, and I
+                I've been relying on K V N B & CO. for my accounting needs, and I
                 couldn't be happier. The team's knowledge and professionalism
                 are top-notch. They've helped me streamline my financial
                 processes and make informed decisions. I highly recommend K V N B &
-                Co. to anyone looking for reliable chartered accountant
+                CO. to anyone looking for reliable chartered accountant
                 services.
               </h6>
              
@@ -47,11 +47,11 @@ export default function TestimonialsFull() {
                 </h6>
               </div>
               <h6 className="my-2">
-                Working with K V N B & Co. has been a game-changer for my small
+                Working with K V N B & CO. has been a game-changer for my small
                 business. They take a personalized approach, paying attention to
                 every detail. Their expertise in tax regulations and financial
                 strategies has been invaluable. I'm grateful for their guidance
-                and highly recommend K V N B & Co.'s services.
+                and highly recommend K V N B & CO.'s services.
               </h6>
               
             </div>
@@ -67,10 +67,10 @@ export default function TestimonialsFull() {
                 </h6>
               </div>
               <h6 className="my-2">
-                I can't speak highly enough of my experience with K V N B & Co.
+                I can't speak highly enough of my experience with K V N B & CO.
                 Their professionalism and deep understanding of chartered
                 accounting have made a significant impact on my personal and
-                business finances. I trust K V N B & Co. to handle my financial
+                business finances. I trust K V N B & CO. to handle my financial
                 affairs with care and expertise.
               </h6>
               
@@ -89,10 +89,10 @@ export default function TestimonialsFull() {
                 </h6>
               </div>
               <h6 className="my-2">
-                K V N B & Co. has been a true partner for me. Their knowledge and
+                K V N B & CO. has been a true partner for me. Their knowledge and
                 attention to detail have saved me time and money. They deliver
                 exceptional client service, providing guidance on tax planning
-                and compliance. I wholeheartedly recommend K V N B & Co. to anyone
+                and compliance. I wholeheartedly recommend K V N B & CO. to anyone
                 seeking trusted chartered accountants.
               </h6>
              
@@ -110,10 +110,10 @@ export default function TestimonialsFull() {
                 </h6>
               </div>
               <h6 className="my-2">
-                I am thrilled with the support I've received from K V N B & Co.
+                I am thrilled with the support I've received from K V N B & CO.
                 Their expertise in financial reporting and tax planning has been
                 instrumental for our organization. They've helped us optimize
-                our operations and achieve our goals. K V N B & Co. is a reliable
+                our operations and achieve our goals. K V N B & CO. is a reliable
                 and professional team that I highly recommend.
               </h6>
               
@@ -130,7 +130,7 @@ export default function TestimonialsFull() {
                 </h6>
               </div>
               <h6 className="my-2">
-                K V N B & Co. has been instrumental in helping me navigate the
+                K V N B & CO. has been instrumental in helping me navigate the
                 complexities of tax planning and compliance. Their team's
                 knowledge and expertise have saved me both time and money. Their
                 commitment to delivering exceptional client service is evident

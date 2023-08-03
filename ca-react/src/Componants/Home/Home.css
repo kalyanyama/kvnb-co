@@ -1,16 +1,15 @@
 #home{
-    width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
 }
 .home-main{
-    height: 100vh;
     background-image: url("/home-3.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    width: 100%;
+    min-height: 80vh;
 }
 .img-home{
     position: relative;
@@ -22,12 +21,11 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 .content-home{
-    width: 100%;
-    height: auto;
+    position: absolute;
     background: #0a0a0a83;
     color: white;
     padding: 20px;
-    position: absolute;
+    width: 100%;
     height: 100%;
     top: 0;
     left: 0;

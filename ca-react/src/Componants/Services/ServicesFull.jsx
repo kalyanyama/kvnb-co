@@ -24,10 +24,10 @@ export default function ServicesFull() {
             >
               <div className="col-md-7 m-auto ">
                 <h2 className="featurette-heading">
-                  AUDIT & ASSURANCE <span className="text-muted"></span>
+                  AUDITING & ASSURANCE <span className="text-muted"></span>
                 </h2>
                 <p className="lead">
-                  As a dedicated Chartered Accountants we specializing in audit and
+                  we specializing in auditing and
                   assurance services, my primary goal is to uphold the financial
                   integrity and trust of my clients' businesses. With extensive
                   experience and a deep knowledge of accounting principles and

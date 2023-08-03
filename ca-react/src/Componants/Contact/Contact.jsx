@@ -1,12 +1,55 @@
 import "./Contact.css";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+
 export default function Contact() {
+  const [contactUs, setContactUs] = useState(false);
+  const [name, setName] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [email, setEmail] = useState("");
+  const [business, setBusiness] = useState("");
+  const [message, setMessage] = useState("");
+  const [ifContactFailed, setIfContactFailed] = useState("");
+
+  const handleContactus = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_n8v2l6e",
+        "template_mr5mx55",
+        {
+          from_name: name,
+          from_mobile: mobile,
+          from_email: email,
+          from_business: business,
+          message: message,
+        },
+        "HCl6WHhyRWyX18MPm"
+      )
+      .then(
+        function (response) {
+          console.log(response.status, response.text);
+          setContactUs(true);
+          setIfContactFailed(
+            "Thanks for contacting us, we'll get back to you soon."
+          );
+        },
+        function (error) {
+          setContactUs(false);
+          setIfContactFailed("Having issues. Please try again.");
+          console.log(error);
+        }
+      );
+  };
+
   return (
     <div id="write-to-us">
       <div className="container-fluid" id="contact">
         <div className="container py-5" data-aos="zoom-out">
           <div className="section-header mt-4 text-dark py-4">
             <h1 className="font-weight-bold display-4 text-light">
-              Write to us. K V N B & co.
+              Write to us. K V N B & CO.
             </h1>
             <h5 className="text-light">
               We are always ready to help you out regarding all your queries.
@@ -25,7 +68,7 @@ export default function Contact() {
               </div>
               <div>
                 <h2 className="font-weight-bold text-primary">
-                  Business hours:
+                  Business hours
                 </h2>
                 <p>Mon - Sat: 9AM - 7PM</p>
               </div>
@@ -38,7 +81,7 @@ export default function Contact() {
                   </a>
                 </p>
                 <p>
-                  <a className="text-light" href="tel:+9191334982729">
+                  <a className="text-light" href="tel:+919133498272">
                     {" "}
                     +91 91334 98272
                   </a>
@@ -46,7 +89,20 @@ export default function Contact() {
               </div>
               <div>
                 <h2 className="font-weight-bold text-primary">Email address</h2>
+
                 <p>
+                  <a className="text-light" href="mailto:kvnb.cahyd@gmail.com">
+                    {" "}
+                    kvnb.cahyd@gmail.com
+                  </a>
+                </p>
+                <p>
+                  <a className="text-light" href="mailto:ca.hyd@kvnbco.com">
+                    {" "}
+                    ca.hyd@kvnbco.com
+                  </a>
+                </p>
+                {/* <p>
                   <a
                     className="text-light"
                     href="mailto:ca.vishwamber@gmail.com"
@@ -63,18 +119,18 @@ export default function Contact() {
                     {" "}
                     cabharathnalla.ncbr@gmail.com
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="col-md-6 col-lg-6">
-              <form>
+              <form onSubmit={handleContactus}>
                 <div className="form-group">
                   {/* <label className="float-left">Enter name</label> */}
                   <input
                     type="text"
                     className="form-control"
                     placeholder="Enter name"
-                    required
+                    onChange={(e) => setName(e.target.value)}
                   />
                 </div>
                 <div className="form-group">
@@ -84,6 +140,7 @@ export default function Contact() {
                     className="form-control"
                     placeholder="Enter mobile"
                     required
+                    onChange={(e) => setMobile(e.target.value)}
                   />
                 </div>
                 <div className="form-group">
@@ -93,6 +150,7 @@ export default function Contact() {
                     className="form-control"
                     placeholder="Enter email"
                     required
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div className="form-group">
@@ -101,7 +159,8 @@ export default function Contact() {
                     type="text"
                     className="form-control"
                     placeholder="Enter business name (optional)"
-                    required
+                    // required
+                    onChange={(e) => setBusiness(e.target.value)}
                   />
                 </div>
                 <div className="form-group">
@@ -111,11 +170,26 @@ export default function Contact() {
                     rows="6"
                     placeholder="Explain how can we help you ?"
                     required
+                    onChange={(e) => setMessage(e.target.value)}
                   />
                 </div>
+                <p
+                  className={
+                    contactUs
+                      ? "text-success text-center"
+                      : "text-danger text-center"
+                  }
+                >
+                  {ifContactFailed}
+                </p>
                 <div className="text-center">
-                  <button type="submit" className="btn btn-primary">
-                    Submit
+                  <button
+                    type="submit"
+                    className={
+                      contactUs ? "btn btn-success" : "btn btn-primary"
+                    }
+                  >
+                    {contactUs ? "Success" : "Submit"}
                   </button>
                 </div>
               </form>

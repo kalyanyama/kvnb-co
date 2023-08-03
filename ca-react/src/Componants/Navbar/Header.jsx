@@ -62,6 +62,7 @@ export default function Header() {
           <li><Link className="dropdown-item" to="/audit-assurance">Audit & Assurance</Link></li>
           <li><Link className="dropdown-item" to="/direct-indirect">Direct & Indirect taxes</Link></li>
           <li><Link className="dropdown-item" to="/nri">NRI compliances</Link></li>
+          <li><Link className="dropdown-item" to="/accounts">Accounts outsourcing</Link></li>
           <li><Link className="dropdown-item" to="/business-startup">Business Establishment</Link></li>
           <li><Link className="dropdown-item" to="/book-keeping">Book keeping</Link></li>
           <li><hr className="dropdown-divider"/></li>
@@ -77,9 +78,9 @@ export default function Header() {
           <NavLink className="nav-link" to="/clients" >Clients</NavLink>
         </li> */}
        
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <NavLink className="nav-link" to="/calculator" >Calculator</NavLink>
-        </li>
+        </li> */}
         <li className="nav-item">
           <NavLink className="nav-link" to="/news" >News</NavLink>
         </li>

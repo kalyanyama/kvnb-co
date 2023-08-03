@@ -17,7 +17,7 @@ export default function Nri() {
                   tax compliance. We understand the unique challenges and
                   obligations faced by NRIs when it comes to tax matters, and we
                   are dedicated to helping our clients fulfill their tax
-                  obligations while optimizing their tax positions.F
+                  obligations while optimizing their tax positions.
                 </p>
                 <p className="lead">
                   Determining residential status is a crucial aspect of NRI tax

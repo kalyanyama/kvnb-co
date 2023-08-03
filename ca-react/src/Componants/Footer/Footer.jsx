@@ -16,23 +16,16 @@ export default function Footer() {
               <h5>Features</h5>
               <ul className="list-unstyled text-small">
                 <li>
-                  <Link  to="/welcome">Expertise in accounting </Link>
-                </li>
-                <li>
                   <Link to="/audit-assurance">Auditing & taxation</Link>
                 </li>
                 <li>
-                  <Link to='/team'>Certified professionals</Link>
+                  <Link to="/team">Certified professionals</Link>
                 </li>
                 <li>
-                  <Link to='/direct-indirect'>Optimized tax benefits</Link>
-                </li>
-             
-                <li>
-                  <Link to='/direct-indirect'>Try our tax Calculator</Link>
+                  <Link to="/direct-indirect">Optimized tax benefits</Link>
                 </li>
                 <li>
-                  <Link to='/direct-indirect'>Customized book-keeping</Link>
+                  <Link to="/book-keeping">Customized book-keeping</Link>
                 </li>
               </ul>
             </div>
@@ -89,15 +82,9 @@ export default function Footer() {
                 } */}
                 <li>
                   <Link className="" to="/welcome">
-                    K V N B & Co.
+                    K V N B & CO.
                   </Link>
                 </li>
-                <li>
-                  <Link className="" to="/team">
-                    Team
-                  </Link>
-                </li>
-
                 <li>
                   <Link className="" to="/contact">
                     Contact
@@ -115,36 +102,33 @@ export default function Footer() {
             <div className="row my-3">
               <div className="d-flex justify-content-center">
                 <span className="mx-3 h4">
-                  <a>
+                  <a
+                    className="text-light"
+                    href="https://instagram.com/passionate_professional_0716?igshid=MzRlODBiNWFlZA=="
+                  >
                     <i className="bi bi-instagram"></i>
                   </a>
                 </span>
                 <span className="mx-3 h4">
-                  <a>
-                    <i className="bi bi-facebook"></i>
-                  </a>
-                </span>
-                <span className="mx-3 h4">
-                  <a>
+                  <a href="https://wa.me/9133417297" className="text-light">
                     <i className="bi bi-whatsapp"></i>
                   </a>
                 </span>
                 <span className="mx-3 h4">
-                  <a>
+                  <a href="tel:+919133498272" className="text-light">
                     <i className="bi bi-phone"></i>
                   </a>
                 </span>
                 <span className="mx-3 h4">
-                  <a>
-                    <i className="bi bi-twitter"></i>
+                  <a href="mailto:kvnb.cahyd@gmail.com" className="text-light">
+                    <i className="bi bi-envelope-at"></i>
                   </a>
                 </span>
               </div>
             </div>
             {/* <p className="float-right"><a href="#">Back to top</a></p> */}
             <p className="text-center">
-              &copy; K V N B & Co. - 2023 All rights reserved.
-              
+              &copy; K V N B & CO. - 2023 All rights reserved.
             </p>
             <p className="text-center">
               Designed by{" "}

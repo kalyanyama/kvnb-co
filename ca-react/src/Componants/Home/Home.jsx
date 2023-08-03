@@ -1,5 +1,5 @@
 import Services from "../Services/Services";
-import Testimonials from "../Testimonials/Testimonials";
+// import Testimonials from "../Testimonials/Testimonials";
 // import Team from "../team/Team";
 import About from "../Info/About";
 import Contact from "../Contact/Contact";
@@ -9,6 +9,7 @@ import "../Home/Home.css";
 // import { useEffect, useState } from "react";
 // import News from "../news/News";
 import { useNavigate } from "react-router-dom";
+import Company from "../welcome/Company";
 
 export default function Home() {
   // const [article, setArticle] = useState([]);
@@ -39,16 +40,16 @@ export default function Home() {
 
   return (
     <div id="home">
-      <div className="">
-        {/* <div className="row mt-5 pt-4">
+      {/* <div className="">
+        <div className="row mt-5 pt-4">
           <div className="col-md-12 col-lg-12 heading-news">
             <div className="ul py-1">{mapping}</div>
           </div>
-        </div> */}
-      </div>
+        </div>
+      </div> */}
 
-      <div className="home-main">
-        <div className="content-home">
+      <div className="home-main mt-5 py-5">
+        <div className="content-home py-5">
           {/* <div className="container">
         <div className="row">
           <div className="col-md-5 col-lg-5 my-auto" data-aos="zoom-out">
@@ -63,7 +64,7 @@ export default function Home() {
               </p>
               <div className="my-4">
               <button className="btn btn-light mr-3" onClick={()=>navigator("/welcome")}>Learn more</button>
-              <button className="btn btn-light" onClick={()=>window.location.href = "tel:9133417297"}>Contact us</button>
+              <button className="btn btn-light" onClick={()=>window.location.href = "tel:9133498272"}>Contact us</button>
               </div>
             </div>
           </div>
@@ -71,22 +72,21 @@ export default function Home() {
           </div>
         </div>
         </div> */}
+
           <div
-            // id="carouselExampleCaptions"
-            // className="container carousel slide"
-            // data-bs-ride="carousel fade"
-            id="carouselExampleSlidesOnly"
-            className="container carousel slide"
+            id="carouselExampleControls"
+            className="carousel slide py-5"
             data-ride="carousel"
           >
             <div className="carousel-inner">
-              <div className="carousel-item active">
+              
+              <div className="carousel-item active" data-interval="3000">
                 <div className="d-block w-100">
                   <div className="text-light">
-                    <h1 className="display-4">AUDIT & ASSURANCE </h1>
+                    <h1 className="display-4">AUDITING & ASSURANCE </h1>
                     <hr />
                     <p className="lead">
-                      Audit and Assurance: Trustworthy scrutiny, delivering
+                      Auditing and Assurance: Trustworthy scrutiny, delivering
                       confidence in financial integrity and operational
                       excellence.
                     </p>
@@ -100,7 +100,7 @@ export default function Home() {
                       <button
                         className="btn btn-light"
                         onClick={() =>
-                          (window.location.href = "tel:9133417297")
+                          (window.location.href = "tel:9133498272")
                         }
                       >
                         Contact us
@@ -109,7 +109,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="carousel-item">
+              <div className="carousel-item" data-interval="3000">
                 <div className="d-block w-100">
                   <div className="text-light">
                     <h1 className="display-4">DIRECT & INDIRECT TAXES </h1>
@@ -128,7 +128,7 @@ export default function Home() {
                       <button
                         className="btn btn-light"
                         onClick={() =>
-                          (window.location.href = "tel:9133417297")
+                          (window.location.href = "tel:9133498272")
                         }
                       >
                         Contact us
@@ -137,7 +137,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="carousel-item">
+              <div className="carousel-item" data-interval="3000">
                 <div className="d-block w-100">
                   <div className="text-light">
                     <h1 className="display-4">NRI TAX COMPLIANCES </h1>
@@ -157,7 +157,7 @@ export default function Home() {
                       <button
                         className="btn btn-light"
                         onClick={() =>
-                          (window.location.href = "tel:9133417297")
+                          (window.location.href = "tel:9133498272")
                         }
                       >
                         Contact us
@@ -166,15 +166,17 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="carousel-item">
+              <div className="carousel-item" data-interval="3000">
                 <div className="d-block w-100">
                   <div className="text-light">
-                    <h1 className="display-4">BUSINESS STARTUP & ESTABLISHMENT SERVICES </h1>
+                    <h1 className="display-4">
+                      BUSINESS STARTUP & <br/> ESTABLISHMENT SERVICES{" "}
+                    </h1>
                     <hr />
                     <p className="lead">
-                    Unlock Your Business Potential: Comprehensive Startup &
-                    Establishment Services for Building and Scaling Successful
-                    Ventures.
+                      Unlock Your Business Potential: Comprehensive Startup &
+                      Establishment Services for Building and Scaling Successful
+                      Ventures.
                     </p>
                     <div className="my-4">
                       <button
@@ -186,7 +188,7 @@ export default function Home() {
                       <button
                         className="btn btn-light"
                         onClick={() =>
-                          (window.location.href = "tel:9133417297")
+                          (window.location.href = "tel:9133498272")
                         }
                       >
                         Contact us
@@ -195,14 +197,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="carousel-item">
+              <div className="carousel-item" data-interval="3000">
                 <div className="d-block w-100">
                   <div className="text-light">
                     <h1 className="display-4">BOOK KEEPING SERVICES </h1>
                     <hr />
                     <p className="lead">
-                    Accurate and Reliable Bookkeeping Solutions: Keeping your
-                    financial records in order with precision and expertise.
+                      Accurate and Reliable Bookkeeping Solutions: Keeping your
+                      financial records in order with precision and expertise.
                     </p>
                     <div className="my-4">
                       <button
@@ -214,7 +216,7 @@ export default function Home() {
                       <button
                         className="btn btn-light"
                         onClick={() =>
-                          (window.location.href = "tel:9133417297")
+                          (window.location.href = "tel:9133498272")
                         }
                       >
                         Contact us
@@ -225,16 +227,41 @@ export default function Home() {
               </div>
             </div>
           </div>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-target="#carouselExampleControls"
+              data-slide="prev"
+            >
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="sr-only">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-target="#carouselExampleControls"
+              data-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="sr-only">Next</span>
+            </button>
         </div>
       </div>
 
+      <Company/>
       <Services />
       <About />
       {/* <Clientss/> */}
       {/* <ClientHome/> */}
       {/* <Team /> */}
       {/* <News/> */}
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <Map />
     </div>
