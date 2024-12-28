@@ -1,6 +1,6 @@
+import emailjs from "@emailjs/browser";
 import { useState } from "react";
-import emailjs  from "@emailjs/browser"
-import "./Calculator.css"
+import "./Calculator.css";
 export default function Calculator() {
   const [results, setResults] = useState(false);
   const [userName, setUserName] = useState("");
@@ -9,24 +9,32 @@ export default function Calculator() {
   const [MinusAmt, setMinusAmt] = useState(0);
   const [OldTax, setOldTax] = useState(0);
   const [NewTax, setNewTax] = useState(0);
-  
-  const updatedIncome = Income - MinusAmt - 50000
-  
+
+  const updatedIncome = Income - MinusAmt - 50000;
+
   const handleCalculations = (e) => {
     e.preventDefault();
 
-        emailjs.send("service_8wjhhql", "template_vxdxsi6", {
-          from_name : userName,
-          from_mobile : userMobile
-        }, "b_nBUkZl0EkDLLatq")
-        .then(function(response) {
+    emailjs
+      .send(
+        "service_8wjhhql",
+        "template_vxdxsi6",
+        {
+          from_name: userName,
+          from_mobile: userMobile,
+        },
+        "b_nBUkZl0EkDLLatq"
+      )
+      .then(
+        function (response) {
           console.log(response.status, response.text);
-        }, function(error) {
+        },
+        function (error) {
           console.log(error);
-        });
+        }
+      );
 
     setResults(true);
-    
 
     var oldTaxTotal = 0;
 
@@ -73,7 +81,7 @@ export default function Calculator() {
           const remainingAmount = firstTaxCal * 0.1 + 15000;
           // const amountWithSurCharge = remainingAmount * 0.04;
           // newTaxTotal = remainingAmount + amountWithSurCharge;
-          newTaxTotal = remainingAmount ;
+          newTaxTotal = remainingAmount;
         } else {
           if (updatedIncome <= 1200000) {
             const noTaxAmount = updatedIncome - 300000;
@@ -82,7 +90,7 @@ export default function Calculator() {
             const remainingAmount = secondTaxCal * 0.15 + 15000 + 30000;
             // const amountWithSurCharge = remainingAmount * 0.04;
             // newTaxTotal = remainingAmount + amountWithSurCharge;
-            newTaxTotal = remainingAmount ;
+            newTaxTotal = remainingAmount;
           } else {
             if (updatedIncome <= 1500000) {
               const noTaxAmount = updatedIncome - 300000;
@@ -92,7 +100,7 @@ export default function Calculator() {
               const remainingAmount = thirdTaxCal * 0.2 + 15000 + 30000 + 45000;
               // const amountWithSurCharge = remainingAmount * 0.04;
               // newTaxTotal = remainingAmount + amountWithSurCharge;
-              newTaxTotal = remainingAmount ;
+              newTaxTotal = remainingAmount;
             } else {
               const noTaxAmount = updatedIncome - 300000;
               const firstTaxCal = noTaxAmount - 300000;
@@ -124,41 +132,53 @@ export default function Calculator() {
               <>
                 <div className="card">
                   <div className="card-header">
-                  <h6 className="text-center">
-                    {userName}
-                    <a
-                      href="#"
-                      onClick={() => setResults(false)}
-                      className="float-right text-dark"
+                    <h6 className="text-center">
+                      {userName}
+                      <a
+                        href="#"
+                        onClick={() => setResults(false)}
+                        className="float-right text-dark"
                       >
-                      Back
-                    </a>
-                      </h6>
+                        Back
+                      </a>
+                    </h6>
                   </div>
                   <div className="row">
-                  <div className="card-body col-md-6 col-lg-6 p-3">
-                    <h5 className="card-title">Post-Budget (Old Regime)</h5>
-                    <small className="card-title">FY(2023-2024)</small><hr/>
-                    <p className="card-text">Total Gross Income : {Income}</p>
-                    <p className="card-text">Total Deductions : {MinusAmt}</p>
-                    <p className="card-text">Standard Amount Deductions : 50,000</p>
-                    <p className="card-text">Taxable amount : {updatedIncome}</p>
-                    <p className="card-text font-weight-bold">Tax on above : {OldTax <= 12500 ? 0 : OldTax}</p>
-                  </div>
-                  <div className="card-body col-md-6 col-lg-6 p-3">
-                  <h5 className="card-title">Post-Budget (New Regime)</h5>
-                    <small className="card-title">FY(2023-2024)</small><hr/>
-                    <p className="card-text">Total Gross Income : {Income}</p>
-                    <p className="card-text">Total Deductions : {MinusAmt}</p>
-                    <p className="card-text">Standard Amount Deductions : 50,000</p>
-                    <p className="card-text">Taxable amount : {updatedIncome}</p>
-                    <p className="card-text font-weight-bold">Tax on above : {NewTax <= 25000 ? 0 : NewTax}</p>
-                  </div>
+                    <div className="card-body col-md-6 col-lg-6 p-3">
+                      <h5 className="card-title">Post-Budget (Old Regime)</h5>
+                      <small className="card-title">FY(2023-2024)</small>
+                      <hr />
+                      <p className="card-text">Total Gross Income : {Income}</p>
+                      <p className="card-text">Total Deductions : {MinusAmt}</p>
+                      <p className="card-text">
+                        Standard Amount Deductions : 50,000
+                      </p>
+                      <p className="card-text">
+                        Taxable amount : {updatedIncome}
+                      </p>
+                      <p className="card-text font-weight-bold">
+                        Tax on above : {OldTax <= 12500 ? 0 : OldTax}
+                      </p>
+                    </div>
+                    <div className="card-body col-md-6 col-lg-6 p-3">
+                      <h5 className="card-title">Post-Budget (New Regime)</h5>
+                      <small className="card-title">FY(2023-2024)</small>
+                      <hr />
+                      <p className="card-text">Total Gross Income : {Income}</p>
+                      <p className="card-text">Total Deductions : {MinusAmt}</p>
+                      <p className="card-text">
+                        Standard Amount Deductions : 50,000
+                      </p>
+                      <p className="card-text">
+                        Taxable amount : {updatedIncome}
+                      </p>
+                      <p className="card-text font-weight-bold">
+                        Tax on above : {NewTax <= 25000 ? 0 : NewTax}
+                      </p>
+                    </div>
                   </div>
                   <div className="card-footer text-muted">
-                    <p className="float-right">
-                      - K V N B & CO
-                    </p>
+                    <p className="float-right">- K S N B CA.</p>
                   </div>
                 </div>
               </>
@@ -185,7 +205,7 @@ export default function Calculator() {
                     type="number"
                     placeholder="Enter Total Gross income"
                     className="form-control"
-                    onChange={(e) => setIncome(parseInt( e.target.value ))}
+                    onChange={(e) => setIncome(parseInt(e.target.value))}
                     required
                     min="1"
                   />
@@ -193,7 +213,7 @@ export default function Calculator() {
                     type="number"
                     placeholder="Enter Total Deductions"
                     className="form-control"
-                    onChange={(e) => setMinusAmt(parseInt( e.target.value))}
+                    onChange={(e) => setMinusAmt(parseInt(e.target.value))}
                   />
                 </div>
                 <div className="text-center">

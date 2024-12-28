@@ -13,7 +13,7 @@ export default function Business() {
                   <span className="text-muted"></span>
                 </h2>
                 <p className="lead">
-                  At K V N B & CO, we specialize in providing comprehensive
+                  At K S N B CA., we specialize in providing comprehensive
                   assistance to clients in business start-up and establishment.
                   We understand the challenges entrepreneurs face when
                   navigating the complex financial and regulatory landscape of
@@ -54,7 +54,7 @@ export default function Business() {
                   Our focus on internal controls enhances the overall efficiency
                   and reliability of our clients' financial operations.
                   Compliance with legal and tax requirements is essential for
-                  any business. At K V N B & Co, we guide our clients through the
+                  any business. At K S N B CA., we guide our clients through the
                   complex maze of regulations and assist in ensuring compliance
                   at every step. From obtaining necessary licenses and permits
                   to navigating tax obligations, we provide expert advice and
@@ -72,7 +72,7 @@ export default function Business() {
                   towards growth and profitability.
                 </p>
                 <h6 className="lead">
-                  In conclusion, K V N B & CO specializes in assisting clients with
+                  In conclusion, K S N B CA. specializes in assisting clients with
                   business start-up and establishment. Through comprehensive
                   guidance and support, we help entrepreneurs navigate the
                   complex financial and regulatory landscape of starting a

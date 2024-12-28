@@ -15,29 +15,6 @@ export default function Home() {
   // const [article, setArticle] = useState([]);
   const navigator = useNavigate();
 
-  // useEffect(() => {
-  //   const fetching = () => {
-  //     fetch(
-  //       "https://gnews.io/api/v4/search?q=tax&lang=en&country=in&max=10&apikey=0592711ca96bfa23d52fbd0cf0e4128b"
-  //     )
-  //       .then((res) => res.json())
-  //       .then((data) => setArticle(data.articles));
-  //   };
-  //   fetching();
-  // }, []);
-
-  // const mapping = article?.map((newss, n) => {
-  //   return (
-  //     <>
-  //       <div key={n}>
-  //         <p className="mx-3">
-  //           <a href={`${newss?.url}`}>{newss?.title}</a>
-  //         </p>
-  //       </div>
-  //     </>
-  //   );
-  // });
-
   return (
     <div id="home">
       {/* <div className="">
@@ -254,8 +231,8 @@ export default function Home() {
         </div>
       </div>
 
-      <Company/>
       <Services />
+      <Company/>
       <About />
       {/* <Clientss/> */}
       {/* <ClientHome/> */}

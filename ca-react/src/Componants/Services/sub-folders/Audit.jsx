@@ -25,16 +25,15 @@ export default function Audit() {
                   tax-efficient as possible.
                 </p>
                 <p className="lead">
-                  Auditing Firms can test your performance against
-                  industry standards, even against your direct competitors.
-                  We’ll review your accounts department and the control measures
-                  you currently use, recommending ways to improve. We might
-                  discover that your competitors are receiving payment more
-                  quickly than you, your stock levels might be higher than the
-                  industry norm, or perhaps your company takes longer than
-                  average to complete orders and sell finished work. Or there
-                  may be ways to improve your cashflow using some careful tax
-                  planning.
+                  Auditing Firms can test your performance against industry
+                  standards, even against your direct competitors. We’ll review
+                  your accounts department and the control measures you
+                  currently use, recommending ways to improve. We might discover
+                  that your competitors are receiving payment more quickly than
+                  you, your stock levels might be higher than the industry norm,
+                  or perhaps your company takes longer than average to complete
+                  orders and sell finished work. Or there may be ways to improve
+                  your cashflow using some careful tax planning.
                 </p>
                 <p className="lead">
                   Our audit is special because of the people who do it – we only
@@ -47,9 +46,10 @@ export default function Audit() {
                   grow.
                 </p>
                 <p className="lead">
-                  There’s no such thing as ‘just another audit client’ at K V N B & CO. you’re a growing enterprise, and your growth is
-                  the focus of our business. So don’t be afraid of your audit –
-                  use it.
+                  There’s no such thing as ‘just another audit client’ at K S N
+                  B CA.. you’re a growing enterprise, and your growth is the
+                  focus of our business. So don’t be afraid of your audit – use
+                  it.
                 </p>
                 <p className="lead">
                   Are you looking for bad credit debt consolidation loans, to

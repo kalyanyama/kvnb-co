@@ -12,9 +12,9 @@ export default function Nri() {
                   NRI TAX COMPLIANCES <span className="text-muted"></span>
                 </h2>
                 <p className="lead">
-                  At K V N B & Co, we specialize in providing expert assistance to
-                  Non-Resident Indians (NRIs) in navigating the complexities of
-                  tax compliance. We understand the unique challenges and
+                  At K S N B CA., we specialize in providing expert assistance
+                  to Non-Resident Indians (NRIs) in navigating the complexities
+                  of tax compliance. We understand the unique challenges and
                   obligations faced by NRIs when it comes to tax matters, and we
                   are dedicated to helping our clients fulfill their tax
                   obligations while optimizing their tax positions.
@@ -55,8 +55,8 @@ export default function Nri() {
                   requirements. Our team provides ongoing support to help
                   clients stay compliant with tax laws, including providing
                   guidance on tax documentation, reporting foreign assets, and
-                  complying with any specific requirements for NRIs. At K V N B &
-                  Co, we understand that tax compliance can be complex and
+                  complying with any specific requirements for NRIs. At K V N B
+                  & Co, we understand that tax compliance can be complex and
                   overwhelming for NRIs. We are committed to simplifying the
                   process and empowering our clients to navigate their tax
                   obligations smoothly. With our expertise in NRI tax
@@ -65,7 +65,7 @@ export default function Nri() {
                   while ensuring compliance with relevant regulations.
                 </p>
                 <h6 className="lead">
-                  In conclusion, K V N B & Co specializes in providing expert
+                  In conclusion, K S N B CA. specializes in providing expert
                   assistance to Non-Resident Indians (NRIs) in tax compliance
                   matters. With our in-depth knowledge of international tax
                   laws, we help NRIs determine their residential status, assess
@@ -76,7 +76,7 @@ export default function Nri() {
                   adhering to all relevant regulations. With our expertise in
                   NRI tax compliances, we empower clients to navigate their tax
                   obligations smoothly and make informed financial decisions. At
-                  K V N B & Co, we are dedicated to assisting NRIs in fulfilling
+                  K S N B CA., we are dedicated to assisting NRIs in fulfilling
                   their tax obligations and achieving their financial goals.
                 </h6>
               </div>

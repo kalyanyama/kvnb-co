@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { domainName } from "../../siteinformation";
 // import { Auth } from "../Admin/Authentications";
 
 export default function Footer() {
@@ -70,33 +71,6 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="col-6 col-md">
-              <h5>About</h5>
-              <ul className="list-unstyled text-small">
-                {/* { !auth.admin &&
-                  <li>
-                  <Link className="" to="/login">
-                    Admin
-                  </Link>
-                </li>
-                } */}
-                <li>
-                  <Link className="" to="/welcome">
-                    K V N B & CO.
-                  </Link>
-                </li>
-                <li>
-                  <Link className="" to="/contact">
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <a className="" href="#map">
-                    Location
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
           <div className="container">
             <div className="row my-3">
@@ -128,13 +102,7 @@ export default function Footer() {
             </div>
             {/* <p className="float-right"><a href="#">Back to top</a></p> */}
             <p className="text-center">
-              &copy; K V N B & CO. - 2023 All rights reserved.
-            </p>
-            <p className="text-center">
-              Designed by{" "}
-              <a href="https://yamakalyan3120.web.app" target="_blanck">
-                Yama kalyan
-              </a>
+              &copy; {domainName.label} - 2023 All rights reserved.
             </p>
           </div>
         </div>

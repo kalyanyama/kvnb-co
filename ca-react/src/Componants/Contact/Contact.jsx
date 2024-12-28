@@ -1,6 +1,7 @@
-import "./Contact.css";
-import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useState } from "react";
+import { domainName } from "../../siteinformation";
+import "./Contact.css";
 
 export default function Contact() {
   const [contactUs, setContactUs] = useState(false);
@@ -49,7 +50,7 @@ export default function Contact() {
         <div className="container py-5" data-aos="zoom-out">
           <div className="section-header mt-4 text-dark py-4">
             <h1 className="font-weight-bold display-4 text-light">
-              Write to us. K V N B & CO.
+              Write to us. {domainName.label}
             </h1>
             <h5 className="text-light">
               We are always ready to help you out regarding all your queries.
@@ -97,9 +98,9 @@ export default function Contact() {
                   </a>
                 </p>
                 <p>
-                  <a className="text-light" href="mailto:ca.hyd@kvnbco.com">
+                  <a className="text-light" href="mailto:ca.hyd@ksnbca.com">
                     {" "}
-                    ca.hyd@kvnbco.com
+                    ca.hyd@ksnbca.com
                   </a>
                 </p>
                 {/* <p>
